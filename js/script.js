@@ -4,7 +4,7 @@
 
 console.log('SNACK 1');
 
-var bici = [
+let bici = [
     {
         nome : 'senzafreni',
         peso : 7
@@ -23,11 +23,11 @@ var bici = [
     }
 ];
 
-var pesoMinimo = 100;
-var leggera = bici[0];
+let pesoMinimo = 100;
+let leggera = bici[0];
 
-for (var i =0; i < bici.length; i++) {
-    var { peso, nome } = bici[i];
+for (let i =0; i < bici.length; i++) {
+    let { peso, nome } = bici[i];
     if (peso < pesoMinimo) {
         pesoMinimo = peso;
         leggera = nome;
@@ -51,7 +51,7 @@ console.log(`la bici piu leggera = ${leggera}`);
 
 console.log('SNACK 2');
 
-var squadre = [
+let squadre = [
     {
         nome : 'Milan',
         puntiFatti : 0,
@@ -76,18 +76,18 @@ var squadre = [
 
 const randomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1) ) + min;
 
-var falliSquadre = [];
+const falliSquadre = [];
 
-for (var i = 0; i < squadre.length; i++) {
+for (let i = 0; i < squadre.length; i++) {
     
     squadre[i].puntiFatti = randomNumber(10, 40);
     squadre[i].falliSubiti = randomNumber(0, 10);
 }
 console.log(squadre);
 
-for (var i = 0; i < squadre.length; i++) {
+for (let i = 0; i < squadre.length; i++) {
 
-    var {nome , falliSubiti } = squadre[i];
+    let {nome , falliSubiti } = squadre[i];
     falliSquadre.push(nome, falliSubiti);
 }
 
